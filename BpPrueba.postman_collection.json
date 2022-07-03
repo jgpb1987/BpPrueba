@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "2aed485e-becf-436f-b172-3f6a912b6d8f",
+		"name": "BpPrueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20773842"
+	},
+	"item": [
+		{
+			"name": "PostCrearCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"codigoGenero\": \"M\",\r\n  \"identificacion\": \"1310079072\",\r\n  \"nombre\": \"JOSE GREGORIO PINTO BARRETO0\",\r\n  \"fechaNacimiento\": \"01/03/1987\",\r\n  \"direccion\": \"REINALDO VALDIVIEZO Y GONZALO VALDIVIEZO\",\r\n  \"telefono\": \"0981030387\",\r\n  \"clave\": \"1987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/clientes/postCrearCliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"clientes",
+						"postCrearCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBuscarCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/clientes/getBuscarCliente?identificacion=1310079072",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"clientes",
+						"getBuscarCliente"
+					],
+					"query": [
+						{
+							"key": "identificacion",
+							"value": "1310079072"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutActualizarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"codigoGenero\": \"M\",\r\n  \"identificacion\": \"1310079072\",\r\n  \"nombre\": \"JOSE GREGORIO RIGOBERTO PINTO BARRETO \",\r\n  \"fechaNacimiento\": \"01/03/1987\",\r\n  \"direccion\": \"REINALDO VALDIVIEZO Y GONZALO VALDIVIEZO\",\r\n  \"telefono\": \"0981030387\",\r\n  \"clave\": \"19879999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/clientes/putActualizarCliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"clientes",
+						"putActualizarCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDesactivarCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\" :\"1310079072\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/clientes/deleteDesactivarCliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"clientes",
+						"deleteDesactivarCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCrearCuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identificacion\": \"1310079072\",\r\n  \"codigoTipoCuenta\": \"AHO\",\r\n  \"numero\": \"123457\",\r\n  \"saldoInicial\": 500,\r\n  \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/cuentas/postCrearCuenta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"cuentas",
+						"postCrearCuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBuscarCuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/cuentas/getbuscarCuenta?numero=123456",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"cuentas",
+						"getbuscarCuenta"
+					],
+					"query": [
+						{
+							"key": "numero",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutActualizarCuenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identificacion\": \"1310079072\",\r\n  \"codigoTipoCuenta\": \"COR\",\r\n  \"numero\": \"123456\",\r\n  \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/cuentas/putActualizarCuenta?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"cuentas",
+						"putActualizarCuenta"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCrearMovimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numero\": \"123457\",\r\n  \"fecha\": \"03-07-2022\",\r\n  \"valor\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/movimientos/postCrearMovimiento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"movimientos",
+						"postCrearMovimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCuenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numero\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/cuentas/deleteCuenta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"cuentas",
+						"deleteCuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBuscarMovimiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/movimientos/getBuscarMovimiento?journal=5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"movimientos",
+						"getBuscarMovimiento"
+					],
+					"query": [
+						{
+							"key": "journal",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEstadoCuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/movimientos/getEstadoCuenta?identificacion=1310079072&fechaInicio=03-07-2022&fechaFin=03-07-2022",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"movimientos",
+						"getEstadoCuenta"
+					],
+					"query": [
+						{
+							"key": "identificacion",
+							"value": "1310079072"
+						},
+						{
+							"key": "fechaInicio",
+							"value": "03-07-2022"
+						},
+						{
+							"key": "fechaFin",
+							"value": "03-07-2022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
